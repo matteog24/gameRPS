@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mDA-qQ-6C8">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FirstViewController" customModule="gameRPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a difficulty" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rES-lT-9cB">
+                                <rect key="frame" x="114.33333333333333" y="434.33333333333331" width="185.33333333333337" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="65" translatesAutoresizingMaskIntoConstraints="NO" id="d7e-tE-Brq">
+                                <rect key="frame" x="107" y="215.66666666666663" width="200" height="465"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P0o-Qr-J9I">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="2x3-VS-bi5"/>
+                                            <constraint firstAttribute="width" constant="200" id="f5R-ha-IDI"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PAZ-nN-yyu">
+                                        <rect key="frame" x="0.0" y="265" width="200" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="UEu-Gh-SXZ"/>
+                                            <constraint firstAttribute="width" constant="200" id="Z8g-wj-9iE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3qY-y0-0Jt">
+                                <rect key="frame" x="112.66666666666669" y="778" width="189" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="sNL-YZ-xWU">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-aE-A10">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
+                                                <state key="normal" title="Rock"/>
+                                                <connections>
+                                                    <action selector="buttonRock:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kN8-6r-gYl"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGY-WH-tc3">
+                                                <rect key="frame" x="62.999999999999986" y="0.0" width="40" height="30"/>
+                                                <state key="normal" title="Paper"/>
+                                                <connections>
+                                                    <action selector="buttonPaper:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A0W-ut-D6d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8d-oq-Efb">
+                                                <rect key="frame" x="131" y="0.0" width="58" height="30"/>
+                                                <state key="normal" title="Scissors"/>
+                                                <connections>
+                                                    <action selector="buttonScissors:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ykV-tT-RZo"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your points = 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRD-6h-KwN">
+                                        <rect key="frame" x="36.333333333333329" y="34" width="115.99999999999999" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU points = 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W6-P0-edk">
+                                <rect key="frame" x="149.33333333333334" y="98" width="115.66666666666666" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4W6-P0-edk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="0SS-bv-k2x"/>
+                            <constraint firstItem="rES-lT-9cB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXd-G8-hnh"/>
+                            <constraint firstItem="4W6-P0-edk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGK-Qg-b2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3qY-y0-0Jt" secondAttribute="bottom" constant="20" id="I5R-La-gv2"/>
+                            <constraint firstItem="rES-lT-9cB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JPu-gQ-z49"/>
+                            <constraint firstItem="3qY-y0-0Jt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aY1-hZ-UnP"/>
+                            <constraint firstItem="d7e-tE-Brq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hrU-6u-Y0X"/>
+                            <constraint firstItem="d7e-tE-Brq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lhJ-eG-s8c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="hUb-Hy-Vjc">
+                        <barButtonItem key="rightBarButtonItem" image="gear" catalog="system" id="xxq-bg-91Y">
+                            <connections>
+                                <segue destination="azQ-Gy-F7g" kind="show" id="Qfs-bC-X85"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buttonPaper" destination="sGY-WH-tc3" id="zhA-xi-rQk"/>
+                        <outlet property="buttonRock" destination="8FP-aE-A10" id="CyP-CD-4jb"/>
+                        <outlet property="buttonScissors" destination="D8d-oq-Efb" id="GUU-mA-rdQ"/>
+                        <outlet property="cpuImageView" destination="P0o-Qr-J9I" id="qLq-vM-jTW"/>
+                        <outlet property="cpuPointsLabel" destination="4W6-P0-edk" id="6n8-3A-3Xr"/>
+                        <outlet property="label" destination="rES-lT-9cB" id="O18-eN-vwm"/>
+                        <outlet property="playerPointsLabel" destination="JRD-6h-KwN" id="1n6-0C-cZl"/>
+                        <outlet property="userImageView" destination="PAZ-nN-yyu" id="h6S-b4-hU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="whP-jz-SRu">
+            <objects>
+                <viewController id="azQ-Gy-F7g" customClass="SettingsViewController" customModule="gameRPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kdl-Wl-HWy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jn1-ZQ-bdi">
+                                <rect key="frame" x="25" y="113.00000000000001" width="364" height="59.666666666666671"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5TC-q0-4DB">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="28.666666666666668"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Game difficulty">
+                                                <attributes>
+                                                    <font key="NSFont" size="24" name="HelveticaNeue-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MYB-nG-ngG">
+                                        <rect key="frame" x="0.0" y="28.666666666666657" width="364" height="32"/>
+                                        <segments>
+                                            <segment title="Easy"/>
+                                            <segment title="Medium"/>
+                                            <segment title="Hard"/>
+                                            <segment title="Impossible"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="handleSegmentedControlChanged:" destination="azQ-Gy-F7g" eventType="valueChanged" id="27t-5t-c9U"/>
+                                        </connections>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p1Y-dA-hwe">
+                                <rect key="frame" x="30" y="202.66666666666669" width="354" height="629.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Acknowledgements">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="26" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Rock Paper Scissors for iOS">
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="20" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" metaFont="menu" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Developed by Matteo Garzon, with special help by Andrea Beggiato.">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+CgoKA
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Icons by Fonts Awesome Free
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">	⁃	Icons — CC BY 4.0 License
+	⁃	In the Font Awesome Free download, the CC BY 4.0 license applies to all icons packaged as .svg and .js files types.
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+
+Copyright © 2020 H-Farm. All rights reserved.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="1" defaultTabInterval="28" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" textContentType="url"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jn1-ZQ-bdi" firstAttribute="top" secondItem="ukb-j9-ocI" secondAttribute="top" constant="25" id="D7S-rg-MJB"/>
+                            <constraint firstItem="p1Y-dA-hwe" firstAttribute="leading" secondItem="ukb-j9-ocI" secondAttribute="leading" constant="30" id="YkO-N4-lzx"/>
+                            <constraint firstItem="ukb-j9-ocI" firstAttribute="trailing" secondItem="p1Y-dA-hwe" secondAttribute="trailing" constant="30" id="dc1-GG-dgF"/>
+                            <constraint firstItem="ukb-j9-ocI" firstAttribute="bottom" secondItem="p1Y-dA-hwe" secondAttribute="bottom" constant="30" id="hoT-ZR-b1u"/>
+                            <constraint firstItem="p1Y-dA-hwe" firstAttribute="top" secondItem="jn1-ZQ-bdi" secondAttribute="bottom" constant="30" id="nXM-Vq-97I"/>
+                            <constraint firstItem="jn1-ZQ-bdi" firstAttribute="leading" secondItem="ukb-j9-ocI" secondAttribute="leading" constant="25" id="wJu-Lo-y1m"/>
+                            <constraint firstItem="ukb-j9-ocI" firstAttribute="trailing" secondItem="jn1-ZQ-bdi" secondAttribute="trailing" constant="25" id="xcL-yi-GZN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ukb-j9-ocI"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="rin-io-da2"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="MYB-nG-ngG" id="Wpv-pJ-4qN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KE6-3W-vcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1934.7826086956522" y="126.5625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kgr-Xf-feR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mDA-qQ-6C8" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f7l-zH-WhR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8b0-YL-Ht4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TEH-mX-ETF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="128" height="119"/>
+    </resources>
+</document>
